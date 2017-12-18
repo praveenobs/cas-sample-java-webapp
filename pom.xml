@@ -72,4 +72,18 @@
             </exclusions>
         </dependency>
     </dependencies>
+   <distributionManagement>
+    <!-- use the following if you're not using a snapshot version. -->
+    <repository>
+        <id>central</id>
+        <name>libs-releases</name>
+        <url>http://artifact.stage.shutterfly.com:8081/artifactory/libs-releases</url>
+    </repository>
+    <!-- use the following if you ARE using a snapshot version. -->
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>libs-snapshots</name>
+        <url>http://artifact.stage.shutterfly.com:8081/artifactory/libs-snapshots</url>
+    </snapshotRepository>
+</distributionManagement>     
 </project>
