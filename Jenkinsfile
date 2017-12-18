@@ -1,5 +1,5 @@
 node {
-    def server = Artifactory.newServer url: http://artifact.stage.shutterfly.com:8081/artifactory, credentialsId: ARTIFACTORYCREDENTIALS
+    def server = Artifactory.newServer url: 'http://artifact.stage.shutterfly.com:8081/artifactory', credentialsId: 'ARTIFACTORYCREDENTIALS'
     def rtMaven = Artifactory.newMavenBuild()
     def buildInfo
 
